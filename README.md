@@ -143,29 +143,3 @@ quiz-app/
 ├── tailwind.config.js  # Tailwind CSS configuration
 └── README.md           # Project documentation
 ```
-
----
-
-## **Contributing**
-
-Contributions are welcome! To contribute:
-
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature-name`.
-3. Make your changes and commit: `git commit -m 'Add some feature'`.
-4. Push your changes: `git push origin feature-name`.
-5. Submit a pull request.
-
----
-
-## **License**
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
----
-
-### **Screenshots**
-
-| Start Page                    | Quiz Page                    | Summary Page                    |
-| ----------------------------- | ---------------------------- | ------------------------------- |
-| ![Start Page](url-to-image-1) | ![Quiz Page](url-to-image-2) | ![Summary Page](url-to-image-3) |
