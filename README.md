@@ -1,46 +1,171 @@
-# Getting Started with Create React App
+# **Quiz App**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Quiz App! This project is built to test users' knowledge of React, TypeScript, and general programming concepts. The app features dynamic question rendering, state management using React Context, and a clean user interface styled with Tailwind CSS and Flowbite.
 
-## Available Scripts
+---
+
+## **Stack**
+
+### **Frontend**
+
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A statically typed superset of JavaScript for better development experience.
+- **React Router**: For handling routing in the application.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **Flowbite**: Pre-designed components for Tailwind CSS to accelerate development.
+
+---
+
+## **Getting Started**
+
+Follow these steps to set up and run the project locally.
+
+### **Prerequisites**
+
+Make sure you have the following installed:
+
+- **Node.js** (v16 or later)
+- **npm** or **yarn**
+
+---
+
+### **Installation**
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/junaidrmzn/cint_assessment.git
+   cd cint_assessment
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+---
+
+### **Available Scripts**
 
 In the project directory, you can run:
 
-### `npm start`
+#### **1. Start Development Server**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+npm start
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm test`
+#### **2. Build for Production**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm run build
+```
 
-### `npm run build`
+Builds the app for production to the `build` folder. The production build is optimized and ready for deployment.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **Usage Guide**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### **Setting Up Tailwind CSS**
 
-### `npm run eject`
+- Tailwind CSS is pre-configured in the project.
+- Modify the styles in the `tailwind.config.js` file to suit your needs.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### **Question Data**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Questions are loaded from a `questions.json` file located in the `src/data` directory.
+- Ensure your data follows the correct format to prevent errors.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### **Adding New Components**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Add new UI components in the `src/components` directory.
+- Follow the existing folder structure for consistency.
 
-## Learn More
+#### **Routing**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- The application uses **React Router v6**.
+- Routes are defined in the `App.tsx` file:
+  - `/` - Start Page
+  - `/quiz` - Quiz Page
+  - `/summary` - Quiz Summary Page
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+
+## **Features**
+
+1. **Dynamic Question Loading**:
+
+   - Questions are shuffled and dynamically rendered.
+   - Supports multiple-choice, true/false, and text-based questions.
+
+2. **Timer for Questions**:
+
+   - Each question has a 1-minute timer.
+
+3. **Responsive Design**:
+
+   - Fully responsive UI built with Tailwind CSS.
+
+4. **Dark Mode**:
+
+   - Support for dark mode styling via Tailwind CSS.
+
+5. **Quiz Summary**:
+   - View the number of questions answered, correct answers, incorrect answers, and a percentage score.
+
+---
+
+## **Development Tools**
+
+- **PostCSS**: For processing Tailwind CSS.
+- **Autoprefixer**: Automatically adds vendor prefixes for CSS.
+
+---
+
+## **Folder Structure**
+
+```
+quiz-app/
+├── public/             # Public assets
+├── src/
+│   ├── components/     # Reusable React components
+│   ├── context/        # React Context for state management
+│   ├── data/           # JSON data (e.g., questions)
+│   ├── pages/          # Page components (Start, Quiz, Summary)
+│   ├── styles/         # Global and Tailwind styles
+│   ├── types/          # TypeScript interfaces
+│   ├── utils/          # Helper functions
+│   └── App.tsx         # Main app component
+├── package.json        # Project dependencies and scripts
+├── tailwind.config.js  # Tailwind CSS configuration
+└── README.md           # Project documentation
+```
+
+---
+
+## **Contributing**
+
+Contributions are welcome! To contribute:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-name`.
+3. Make your changes and commit: `git commit -m 'Add some feature'`.
+4. Push your changes: `git push origin feature-name`.
+5. Submit a pull request.
+
+---
+
+## **License**
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+---
+
+### **Screenshots**
+
+| Start Page                    | Quiz Page                    | Summary Page                    |
+| ----------------------------- | ---------------------------- | ------------------------------- |
+| ![Start Page](url-to-image-1) | ![Quiz Page](url-to-image-2) | ![Summary Page](url-to-image-3) |
